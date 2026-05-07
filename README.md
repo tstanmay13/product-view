@@ -41,14 +41,14 @@ If you want a generated PRD, a release note, a multi-persona review, or a strate
 The skill ships as a Claude Code plugin. From inside Claude Code:
 
 ```
-/plugin marketplace add YOUR_USERNAME/product-view
+/plugin marketplace add tstanmay13/product-view
 /plugin install product-view@product-view
 ```
 
 Or, for a manual install, clone into `~/.claude/skills/`:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/product-view.git ~/.claude/skills/product-view-repo
+git clone https://github.com/tstanmay13/product-view.git ~/.claude/skills/product-view-repo
 ln -s ~/.claude/skills/product-view-repo/skills/product-view ~/.claude/skills/product-view
 ```
 

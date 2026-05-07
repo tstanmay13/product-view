@@ -3,9 +3,9 @@
   "description": "A conversational lens that keeps Claude in product-space — describing what the human on the other side of the screen experiences — until you explicitly ask to cross into code-space.",
   "version": "0.1.0",
   "author": {
-    "name": "YOUR_NAME"
+    "name": "Tanmay Singh"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/product-view",
-  "repository": "https://github.com/YOUR_USERNAME/product-view",
+  "homepage": "https://github.com/tstanmay13/product-view",
+  "repository": "https://github.com/tstanmay13/product-view",
   "license": "MIT"
 }
