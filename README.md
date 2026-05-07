@@ -42,7 +42,7 @@ The skill ships as a Claude Code plugin. From inside Claude Code:
 
 ```
 /plugin marketplace add tstanmay13/product-view
-/plugin install product-view@product-view
+/plugin install product-view@tstanmay13-product-view
 ```
 
 Or, for a manual install, clone into `~/.claude/skills/`:
