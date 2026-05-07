@@ -6,7 +6,10 @@
   "plugins": [
     {
       "name": "product-view",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "tstanmay13/product-view"
+      },
       "description": "A conversational lens that keeps Claude in product-space — describing what the human on the other side of the screen experiences — until you explicitly ask to cross into code-space."
     }
   ]
