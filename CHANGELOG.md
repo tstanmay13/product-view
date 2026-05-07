@@ -4,6 +4,15 @@ All notable changes to the `product-view` skill are documented here.
 
 This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] — 2026-05-07
+
+### Added
+- New SKILL.md section: **Stepping out of the view unprompted**. Even with `view on`, the skill now permits Claude to surface a brief code-side aside when a critical technical detail would change the user's decision (misleading product view, infeasibility, security/privacy issue). High bar: the default is to stay in the lens; the aside is formatted as clearly out-of-lens and returns to product-view immediately.
+- New EXAMPLES.md entry (#6): a planning conversation where the skill steps out of the lens for one paragraph to flag that the user was about to promise "real-time sync" to a customer when the implementation only supports eventual sync.
+
+### Changed
+- Marketplace `source` now uses the explicit `{ "source": "github", "repo": "..." }` object form instead of the `"."` shorthand, for compatibility with older Claude Code versions.
+
 ## [0.1.0] — 2026-05-07
 
 Initial release.

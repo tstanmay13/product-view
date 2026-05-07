@@ -1,6 +1,6 @@
 # Examples
 
-Six before/after pairs. The contrast is the point.
+Seven before/after pairs. The contrast is the point.
 
 ---
 
@@ -105,7 +105,25 @@ What changed: "the player" not "the user". The player's verbs are *dies*, *sees*
 
 ---
 
-## 6. Counter-example — the skill correctly does NOT activate
+## 6. Stepping out of the lens for a critical technical detail
+
+The user has `view on` and is planning a feature.
+
+**Prompt:** *Let's let users sync their notes across devices. I'm going to tell our biggest customer it'll be real-time so I can close the deal this week. Walk me through what they should expect.*
+
+### With product-view (mode: plan, with code-side aside)
+
+> They write a note on their laptop. They pick up their phone and the note is there, in the same place, with the same content. They edit it on the phone, set the phone down, and the laptop catches up — the change is reflected the next time they look at it. If they're offline when they make a change, it queues up and shows up the moment they reconnect. They never have to think about "syncing"; their notes just feel like one thing across their devices.
+>
+> *(Heads up from the code side: our current sync is **eventual, with a typical lag of 5–30 seconds, sometimes longer under contention or on cellular.** Calling it "real-time" to a paying customer is a promise we'll measurably miss. The product description above is honest — "the laptop catches up" — but "real-time" isn't accurate today and we'd need to switch to a different sync model to make it so.)*
+>
+> Back to the product view: the open product decisions are how we handle conflicts (last-write-wins vs. merge), and what the user sees during the lag (do they see a "syncing…" indicator, or do edits appear silently when ready?). Both of those shape what counts as "feeling like one thing."
+
+What changed: the lens stayed on for the user-facing description, but the skill broke out for one paragraph because the user was about to make a customer promise the implementation can't support. Then it returned to the lens. The code-side detail is genuinely decision-changing — without it, the user closes a deal on a false premise.
+
+---
+
+## 7. Counter-example — the skill correctly does NOT activate
 
 **Prompt:** *This regex is matching way too slowly on inputs over 10kb. I think it's catastrophic backtracking. Can you spot the issue?*
 

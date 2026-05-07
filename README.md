@@ -121,7 +121,7 @@ For these, the right altitude is the code, not the product. Forcing a "user pers
 
 ## Examples
 
-See [EXAMPLES.md](EXAMPLES.md) for six before/after pairs covering explanation, reframing, planning, mid-conversation drop-ins, a non-customer audience (a game player), and a counter-example showing the skill correctly *not* activating.
+See [EXAMPLES.md](EXAMPLES.md) for seven before/after pairs covering explanation, reframing, planning, mid-conversation drop-ins, a non-customer audience (a game player), the skill stepping out of the lens for a critical code-side detail, and a counter-example showing the skill correctly *not* activating.
 
 ## Related skills
 

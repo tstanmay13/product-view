@@ -1,7 +1,7 @@
 {
   "name": "product-view",
   "description": "A conversational lens that keeps Claude in product-space — describing what the human on the other side of the screen experiences — until you explicitly ask to cross into code-space.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Tanmay Singh"
   },
