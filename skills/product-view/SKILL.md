@@ -3,7 +3,7 @@ name: product-view
 description: Step out of code-language and describe a feature, bug, or plan from the perspective of whoever is on the other side of the screen — the customer, user, player, reader, student, or patient. Use when the user asks to "explain how X works", "walk me through Y", "translate this", "from the product perspective", "as a user flow", "what does this look like to the user", "from the customer POV", "view on", "/product-view", or pastes a bug report, PR, or ticket and asks what's wrong in plain terms. Auto-activate on feature explanations and feature-planning conversations even when not explicitly asked, because most software explanations are improved by leading with the product view. Do NOT use for pure algorithm, data-structure, performance, or internal-infrastructure questions (CI, build, deploy, container orchestration), code style review, or library selection on technical merits — those are inside-the-code questions where staying in code-language is correct.
 license: MIT
 metadata:
-  version: 0.1.1
+  version: 0.1.2
 ---
 
 # product-view
@@ -60,6 +60,8 @@ Pick one based on the user's intent. If intent is ambiguous, see `references/mod
 | **plan** | New functionality, before any implementation talk | The user's goal, the moments they pass through, what success looks like — no code |
 
 In **plan** mode specifically: refuse to design implementation first. If the user describes a feature in implementation terms ("we'll add a Redis cache that…"), restate the user goal in product terms *before* discussing any code.
+
+In **explain** and **reframe** mode specifically: **ground before you translate.** When the feature or bug actually exists, look at the real artifact first — the code, the ticket, the trace — so the product description is *true*, then render it in product-language. Don't reconstruct a plausible-sounding flow from the feature's name. A confident description of a journey that doesn't match what's really there is its own fluency trap, and harder to catch than a leaked code-word because nothing in it *looks* wrong.
 
 ## What to strip / what to keep
 

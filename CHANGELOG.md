@@ -4,6 +4,11 @@ All notable changes to the `product-view` skill are documented here.
 
 This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] — 2026-06-26
+
+### Added
+- New SKILL.md guidance for **explain** and **reframe** mode: **ground before you translate.** When the feature or bug actually exists, read the real artifact (code, ticket, trace) before describing it, so the product-language description is *true* rather than a plausible-sounding reconstruction from the feature's name. Surfaced by an eval run where the skill produced a generic flow instead of grounding in the actual feature — a confident-but-wrong journey is a fluency trap that's harder to catch than a leaked code-word.
+
 ## [0.1.1] — 2026-05-07
 
 ### Added
