@@ -1,5 +1,7 @@
 # product-view
 
+> Part of [**tstanmay13/claude-skills**](https://github.com/tstanmay13/claude-skills) — add one marketplace, get all my skills.
+
 A Claude Code skill that flips Claude out of code-language and into product-language — describing what the human on the other side of the screen experiences — until you explicitly ask for the code.
 
 ![product-view in action — a Sentry stack trace reframed as customer impact, no code-language](assets/demo.gif)
