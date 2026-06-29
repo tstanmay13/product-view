@@ -2,6 +2,10 @@
 
 A Claude Code skill that flips Claude out of code-language and into product-language — describing what the human on the other side of the screen experiences — until you explicitly ask for the code.
 
+![product-view in action — a Sentry stack trace reframed as customer impact, no code-language](assets/demo.gif)
+
+> *Illustrative example of the skill's output. Re-render with `vhs assets/demo.tape`.*
+
 ## Before / after
 
 **Without product-view:**
