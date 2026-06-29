@@ -4,6 +4,11 @@ All notable changes to the `product-view` skill are documented here.
 
 This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.3] — 2026-06-26
+
+### Changed
+- Tightened the auto-activation clause in the description: it now scopes to *user-facing* feature explanations and explicitly excludes internal components (a service, a queue, an algorithm), which stay in code-language. A triggering eval (3 independent judges per query) found the broad "most software explanations" rationale occasionally misfired on internal-component questions like "summarize what this microservice does" (fired 1/3). After the change, that and the other boundary splits (rate limiter, recommendation algorithm) resolved to consensus "no" with no regression on genuine user-facing triggers.
+
 ## [0.1.2] — 2026-06-26
 
 ### Added
