@@ -2,7 +2,7 @@
 
 > Part of [**tstanmay13/claude-skills**](https://github.com/tstanmay13/claude-skills) — add one marketplace, get all my skills.
 
-A Claude Code skill that flips Claude out of code-language and into product-language — describing what the human on the other side of the screen experiences — until you explicitly ask for the code.
+A Claude Code and Codex skill that flips Claude out of code-language and into product-language — describing what the human on the other side of the screen experiences — until you explicitly ask for the code.
 
 ![product-view in action — a Sentry stack trace reframed as customer impact, no code-language](assets/demo.gif)
 
@@ -42,7 +42,22 @@ Three sub-modes:
 
 If you want a generated PRD, a release note, a multi-persona review, or a strategic exercise, those skills exist and they're better at their thing than `product-view` would be. This skill does one move: it stops the conversation from sneaking code-language into descriptions of the product.
 
-## Install
+## Claude Code and Codex
+
+The same skill files support both agents. Install from the combined catalog:
+
+```sh
+claude plugin marketplace add tstanmay13/claude-skills
+claude plugin install product-view@tstanmay13-skills
+codex plugin marketplace add tstanmay13/claude-skills
+codex plugin add product-view@tstanmay13-skills
+```
+
+Invoke `/product-view` in Claude Code or `$product-view` in Codex. Restart the agent after installation or updates. The repository name `claude-skills` is retained for existing installs; its catalog now serves both agents.
+
+`plugin.json` is the portable package manifest; `.claude-plugin/plugin.json` and `.codex-plugin/plugin.json` provide runtime compatibility. All three share one version and one `skills/` directory. Source changes belong here, never in an installed plugin cache. Directory publication is separate from GitHub distribution; see the [catalog release guide](https://github.com/tstanmay13/claude-skills/blob/main/PUBLISHING.md).
+
+## Other installation options
 
 The skill ships as a Claude Code plugin. From inside Claude Code:
 

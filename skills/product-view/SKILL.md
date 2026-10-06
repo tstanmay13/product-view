@@ -1,9 +1,9 @@
 ---
 name: product-view
-description: Step out of code-language and describe a feature, bug, or plan from the perspective of whoever is on the other side of the screen — the customer, user, player, reader, student, or patient. Use when the user asks to "explain how X works", "walk me through Y", "translate this", "from the product perspective", "as a user flow", "what does this look like to the user", "from the customer POV", "view on", "/product-view", or pastes a bug report, PR, or ticket and asks what's wrong in plain terms. Auto-activate on user-facing feature explanations and feature-planning conversations even when not explicitly asked, because most are improved by leading with the product view — but not on explanations of internal components (a service, a queue, an algorithm), which stay in code-language. Do NOT use for pure algorithm, data-structure, performance, or internal-infrastructure questions (CI, build, deploy, container orchestration), code style review, or library selection on technical merits — those are inside-the-code questions where staying in code-language is correct.
+description: Step out of code-language and describe a feature, bug, or plan from the perspective of whoever is on the other side of the screen — the customer, user, player, reader, student, or patient. Use when the user asks to "explain how X works", "walk me through Y", "translate this", "from the product perspective", "as a user flow", "what does this look like to the user", "from the customer POV", "view on", "/product-view", or pastes a bug report, PR, or ticket and asks what's wrong in plain terms. Auto-activate when the user asks for the experience or impact of a user-facing feature — but not on explanations of internal components (a service, a queue, an algorithm), which stay in code-language. Do NOT use for pure algorithm, data-structure, performance, or internal-infrastructure questions (CI, build, deploy, container orchestration), code style review, or library selection on technical merits — those are inside-the-code questions where staying in code-language is correct.
 license: MIT
 metadata:
-  version: 0.1.3
+  version: 0.1.4
 ---
 
 # product-view
@@ -39,7 +39,7 @@ If it isn't obvious, ask once: *who's on the other side of this?* Don't default 
 
 This skill is active when any of the following is true:
 
-- User invokes it: `/product-view`, `product-view on`, `view on`.
+- User invokes it: `/product-view` in Claude Code, `$product-view` in Codex, `product-view on`, or `view on`.
 - User uses a trigger phrase: "from the product perspective", "as a user flow", "what does this look like to [the user|customer|player|…]", "translate this", "explain this in product terms", "outside-in", "from the customer POV", "in plain terms".
 - User asks for an **explanation** of a feature or flow ("explain how auth works", "walk me through checkout").
 - User is in **feature planning** in customer-facing terms ("we want to let users…", "I'm thinking about adding…").

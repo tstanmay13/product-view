@@ -1,0 +1,20 @@
+{
+  "name": "tstanmay13-product-view",
+  "interface": {
+    "displayName": "Product View"
+  },
+  "plugins": [
+    {
+      "name": "product-view",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

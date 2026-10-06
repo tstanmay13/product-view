@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product View"
+  short_description: "Explain features through the user experience"
+  default_prompt: "Use $product-view to explain this feature from the customer perspective."

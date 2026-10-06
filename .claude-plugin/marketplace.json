@@ -10,7 +10,11 @@
         "source": "github",
         "repo": "tstanmay13/product-view"
       },
-      "description": "A conversational lens that keeps Claude in product-space — describing what the human on the other side of the screen experiences — until you explicitly ask to cross into code-space."
+      "description": "A conversational lens that keeps the agent in product-space \u2014 describing what the human on the other side of the screen experiences \u2014 until you explicitly ask to cross into code-space."
     }
-  ]
+  ],
+  "metadata": {
+    "description": "A conversational lens that keeps the agent in product-space \u2014 describing what the human on the other side of the screen experiences \u2014 until you explicitly ask to cross into code-space.",
+    "version": "0.1.4"
+  }
 }

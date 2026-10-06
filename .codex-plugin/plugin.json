@@ -1,0 +1,28 @@
+{
+  "name": "product-view",
+  "description": "A conversational lens that keeps the agent in product-space \u2014 describing what the human on the other side of the screen experiences \u2014 until you explicitly ask to cross into code-space.",
+  "version": "0.1.4",
+  "author": {
+    "name": "Tanmay Singh",
+    "url": "https://github.com/tstanmay13"
+  },
+  "homepage": "https://github.com/tstanmay13/product-view",
+  "repository": "https://github.com/tstanmay13/product-view",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Product View",
+    "shortDescription": "Explain the user experience",
+    "longDescription": "Explain features, bugs, and plans through what people see and do. Grounds existing behavior in the actual artifact. Technical questions remain technical.",
+    "developerName": "Tanmay Singh",
+    "category": "Productivity",
+    "websiteURL": "https://github.com/tstanmay13/product-view",
+    "supportURL": "https://github.com/tstanmay13/product-view/issues",
+    "defaultPrompt": [
+      "Use $product-view to explain this feature from the customer perspective."
+    ],
+    "brandColor": "#23364D",
+    "composerIcon": "./assets/plugin-icon.svg",
+    "logo": "./assets/plugin-icon.svg"
+  }
+}
